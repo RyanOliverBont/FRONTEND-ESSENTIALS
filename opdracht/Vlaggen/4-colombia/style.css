@@ -14,13 +14,21 @@
 
 #bovenkant{
     width: 800px;
-    height: 250px;
-    background-color: white;
+    height: 50%;
+    background-color: yellow;
 }
+#middenstuk{
+    width: 800px;
+    height: 25%;
+    background-color: blue;
+}
+
+
+
 
 #onderkant{
     width: 800px;
-    height: 250px;
+    height: 25%;
     background-color: red;
 }
 

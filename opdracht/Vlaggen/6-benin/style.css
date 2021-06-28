@@ -1,0 +1,48 @@
+/* Hier hoef je niks mee te doen */
+*{
+    font-size:0;
+}
+
+#container{
+    width: 800px;
+    height: 250px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+#links{
+    width: 33.3333333333333333%;
+    height: 250px;
+    background-color: darkgreen;
+    display: inline-block;
+}
+
+#rechts{
+    width: 66.66666666666666666%;
+    height: 250px;
+    display: inline-block;
+}
+
+
+
+
+#bovenkant{
+    width: 100%;
+    height: 50%; 
+    background-color: yellow;
+    
+}
+
+#onderkant{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+   
+}
+
+
+
+
+
+
+

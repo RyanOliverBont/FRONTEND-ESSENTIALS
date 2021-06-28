@@ -6,33 +6,122 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+        
+    let bezoeker = {
+          voornaam : prompt("Wat is je voornaam?"),
+          achternaam : prompt("Wat is je achternaam?"),
+           leeftijd : prompt("Wat is je leeftijd?"),
+           email : prompt("Wat is je email?"),
+           woonplaats : prompt("Wat is je woonplaats?"),
+           favoriete_codetaal : prompt("Wat is je favoriete_codetaal?"),
+      };
+      console.log(bezoeker);
+
+       
+       
+   </script>
 <body>
+    <h1 id="voornaam_koptekst"></h1>
+ <h2 id="achternaam_koptekst"></h2>
+    <nav>
+        <ul class="container">
+            <li class="menuitem" id="item-1"><a href="../Vlaggen/1-polen/index.html">Polen</a></li>
+            <li class="menuitem" id="item-2"><a href="../Vlaggen/2-nederland/index.html">Nederland</a></li>
+            <li class="menuitem" id="item-3"><a href="../Vlaggen/3-frankrijk/index.html">Frankrijk</a></li>
+            <li class="menuitem" id="item-4"><a href="../Vlaggen/4-colombia/index.html">Colombia</a></li>
+            <li class="menuitem" id="item-5"><a href="../Vlaggen/5-botswana/index.html">Botswana</a></li>
+            <li class="menuitem" id="item-6"><a href="../Vlaggen/6-benin/index.html">Benin</a></li>
+            <li class="menuitem" id="item-7"><a href="../Vlaggen/7-chile/index.html">Chile</a></li>
+            <li class="menuitem" id="item-8"><a href="../Vlaggen/8-denemarken/index.html">Denemarken</a></li>
+            <li class="menuitem" id="item-9"><a href="../Vlaggen/9-noorwegen/index.html">Noorwegen</a></li>
+        </ul>
+    </nav>
     
-    <div class="container status">
-        
-    </div>
-    <div class="container">
-        <div class="col">
-            <div class="button" id="eten"><span>Geef eten</span></div>
-            <div class="button" id="drinken"><span>Geef Drinken</span></div>
-            <div class="button" id="aaien"><span>Aaien</span></div>
-        </div>
-        <div class="col">
-        </div>
-        <div class="response"></div>
-    </div>
+  
+    <table>
+      <thead>
+          <tr>
+              <th>eigenschap</th>
+              <th>waarde</th>
+          </tr>
+      </thead>  
+
+      <tbody>
+       <tr>
+           <th>voornaam</th>
+           <th id = "voornaam"></th>
+       </tr>
+
+       <tr>
+            <th>achternaam</th> 
+            <th id = "achternaam"></th>
+        </tr>
+
+        <tr>
+            <th>email</th> 
+            <th id = "email"></th>
+        </tr>
+
+        <tr>
+            <th>leeftijd</th> 
+            <th id = "leeftijd"></th>
+        </tr>
+
+        <tr>
+            <th>woonplaats</th> 
+            <th id = "woonplaats"></th>
+        </tr>
+
+        <tr>
+            <th>favoriete_codetaal</th> 
+            <th id = "favoriete_codetaal"></th>
+        </tr>
+    
+    
+      </tbody>
+
+    </table>
     <script>
+        document.getElementById('voornaam').innerHTML = String(bezoeker.voornaam);
+        document.getElementById('achternaam').innerHTML = bezoeker.achternaam;
+        document.getElementById('email').innerHTML = bezoeker.email;
+        document.getElementById('leeftijd').innerHTML = Number(bezoeker.leeftijd);
+        document.getElementById('woonplaats').innerHTML = bezoeker.woonplaats;
+        document.getElementById('favoriete_codetaal').innerHTML = bezoeker.favoriete_codetaal;
+
+        document.getElementById('voornaam_koptekst').innerHTML = bezoeker.voornaam;
+        document.getElementById('achternaam_koptekst').innerHTML = bezoeker.achternaam;
+
+
         
-        let persoon = {
-            voornaam : prompt("Wat is je naam?"),
-            achternaam : prompt("Wat is je achternaam?"),
-            leeftijd : prompt("Wat is je leeftijd?"),
-        };
+
+        if(bezoeker.leeftijd == 16){
+            document.body.style.backgroundColor = "orange";
+        }
+
+
+        else if(bezoeker.leeftijd == 17){
+            document.body.style.backgroundColor = "blue";
+        }
+
+
+      else if(bezoeker.leeftijd == 18){
+            document.body.style.backgroundColor = "gold";
+        }
 
 
 
-        
-        
+        else if(bezoeker.leeftijd == 19){
+            document.body.style.backgroundColor = "green";
+        }
+
+
+       else{
+            document.body.style.backgroundColor = "brown";
+        }
     </script>
+  
 </body>
 </html>

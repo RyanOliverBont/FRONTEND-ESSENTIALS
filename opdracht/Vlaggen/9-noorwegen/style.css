@@ -1,0 +1,64 @@
+/* Hier hoef je niks mee te doen */
+*{
+    font-size:0;
+}
+
+#container{
+    width: 900px;
+    height: 310px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+#bovenkant{
+    width: 900px;
+    height: 90px;
+    display:inline-block;
+}
+
+#linksboven{
+    width: 180px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}
+
+#rechtsboven{
+    width: 610px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}
+
+#middenboven{
+    width: 90px;
+    height: 80px;
+    background-color: blue;
+    border: 10px solid white;
+    display:inline-block;
+    border-bottom-color: blue;
+}
+
+#middenonder{
+    width: 90px;
+    height: 80px;
+    background-color: blue;
+    border: 10px solid white;
+    display:inline-block;
+    border-top-color:blue
+}
+
+#middenstuk{
+    width: 890px;
+    height: 90px;
+    display:inline-block;
+    border: 10px solid white;
+    background-color: blue;
+
+}
+
+#onderkant{
+    width: 900px;
+    height: 90px;
+    display:inline-block;
+}
